@@ -1,7 +1,7 @@
  
  # NBCE 
  
- This is the source code of our NACL 2024's paper: Jianlin, Su, Murtadha, Ahmed, et al. "Naive Bayes-based Context Extension for Large Language Models". 
+ This is the source code of our NAACL 2024's paper: Jianlin, Su, Murtadha, Ahmed, et al. "Naive Bayes-based Context Extension for Large Language Models". 
  NBCE enables existing LLMs to perform ICL with an increased number of demonstrations by significantly expanding their context size
 
 # Evaluation
