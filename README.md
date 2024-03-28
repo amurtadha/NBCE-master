@@ -15,7 +15,7 @@ sh eval_text_class.sh 0,1 gpt2-large
 
 If you use the code,  please cite the paper: 
  ```
-@article{RNT-TACL-2023,
+@article{nbce_2024,
   author       = {Jianlin Su and
                   Ahmed Murtadha and               
                   Wenbo and
