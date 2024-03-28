@@ -24,7 +24,7 @@ If you use the code,  please cite the paper:
   title        = {Naive Bayes-based Context Extension for Large Language Models},
   journal      = {2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL, 2024)},
   year         = {2024},
-  url          = {[https://doi.org/10.48550/arXiv.2306.07621](https://arxiv.org/pdf/2403.17552v1.pdf)},
+  url          = {https://arxiv.org/pdf/2403.17552v1.pdf},
   doi          = {}
 }
 ```
