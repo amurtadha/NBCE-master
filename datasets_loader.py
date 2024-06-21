@@ -61,9 +61,9 @@ class ClassificationDatasetAccess(ABC):
 
     def _load_dataset(self):
         if self.subset is not None:
-            dataset = load_dataset('/root/all_datasets/' + self.dataset + '/' + self.subset)
+            dataset = load_dataset( self.dataset , self.subset)
         else:
-            dataset = load_dataset('/root/all_datasets/' + self.dataset)
+            dataset = load_dataset(self.subset)
 
         if 'validation' in dataset:
             return dataset['train'], dataset['validation']
@@ -145,9 +145,9 @@ class ExtractionDATASET(ABC):
 
     def _load_dataset(self):
         if self.subset is not None:
-            dataset = load_dataset('/root/all_datasets/' + self.dataset + '/' + self.subset)
+            dataset = load_dataset( self.dataset , self.subset)
         else:
-            dataset = load_dataset('/root/all_datasets/' + self.dataset)
+            dataset = load_dataset(self.subset)
 
         if 'validation' in dataset:
             return dataset['train'], dataset['validation']
@@ -230,10 +230,10 @@ class MultiChoiceDatasetAccess(ABC):
 
     def _load_dataset(self):
         if self.subset is not None:
-            dataset = load_dataset('/root/all_datasets/' + self.dataset + '/' + self.subset)
+            dataset = load_dataset( self.dataset , self.subset)
         else:
-            print('/root/all_datasets/' + self.dataset)
-            dataset = load_dataset('/root/all_datasets/' + self.dataset)
+            print(self.subset)
+            dataset = load_dataset(self.subset)
 
         if 'validation' in dataset:
             return dataset['train'], dataset['validation']
