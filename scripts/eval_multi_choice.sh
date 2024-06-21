@@ -3,7 +3,7 @@
 cd ../
 for d in piqa obqa hellaswag copa arce
 do
-  HF_DATASETS_OFFLINE=1 CUDA_VISIBLE_DEVICES=$1  python main.py \
+  CUDA_VISIBLE_DEVICES=$1  python main.py \
   --dataset $d \
   --model $2 \
   --n-windows 3 \
